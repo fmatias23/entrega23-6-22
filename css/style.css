@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Indie+Flower&family=Roboto:wght@300;400;700&family=Staatliches&display=swap");
+/* line 1, ../../../OneDrive/Escritorio/tercera entrega/sass/_estructura.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 7, ../../../OneDrive/Escritorio/tercera entrega/sass/_estructura.scss */
+.flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* line 15, ../../../OneDrive/Escritorio/tercera entrega/sass/_estructura.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 19, ../../../OneDrive/Escritorio/tercera entrega/sass/_estructura.scss */
+.contenedor {
+  padding: 60px 0px;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* line 27, ../../../OneDrive/Escritorio/tercera entrega/sass/_estructura.scss */
+.titulo {
+  color: #ae368ee8;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*header*/
+/* line 3, ../../../OneDrive/Escritorio/tercera entrega/sass/_menu.scss */
+header {
+  width: 100%;
+  height: 600px;
+  background: #bc4e9c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(223, 216, 180, 0.492), rgba(232, 226, 191, 0.644));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(233, 194, 235, 0.492), rgba(233, 182, 236, 0.64)), url(../joyeria1.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* line 16, ../../../OneDrive/Escritorio/tercera entrega/sass/_menu.scss */
+nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
+}
+
+/* line 21, ../../../OneDrive/Escritorio/tercera entrega/sass/_menu.scss */
+nav a {
+  color: #020202;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* line 28, ../../../OneDrive/Escritorio/tercera entrega/sass/_menu.scss */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* line 33, ../../../OneDrive/Escritorio/tercera entrega/sass/_menu.scss */
+header .texto-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* line 43, ../../../OneDrive/Escritorio/tercera entrega/sass/_menu.scss */
+.texto-header h1 {
+  font-size: 50px;
+  color: #201c20;
+}
+
+/* line 48, ../../../OneDrive/Escritorio/tercera entrega/sass/_menu.scss */
+.texto-header h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #403838;
+}
+
+/* line 54, ../../../OneDrive/Escritorio/tercera entrega/sass/_menu.scss */
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*about us*/
+/* line 3, ../../../OneDrive/Escritorio/tercera entrega/sass/_servicios.scss */
+main .sobre-nosotros {
+  padding: 30px 0 50px 0;
+}
+
+/* line 7, ../../../OneDrive/Escritorio/tercera entrega/sass/_servicios.scss */
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+/* line 15, ../../../OneDrive/Escritorio/tercera entrega/sass/_servicios.scss */
+.iamgen-about-us {
+  width: 90%;
+}
+
+/* line 20, ../../../OneDrive/Escritorio/tercera entrega/sass/_servicios.scss */
+.sobre-nosotros .contenido-textos {
+  width: 48%;
+}
+
+/* line 25, ../../../OneDrive/Escritorio/tercera entrega/sass/_servicios.scss */
+.contenido-textos h3 {
+  margin-bottom: 15px;
+}
+
+/* line 30, ../../../OneDrive/Escritorio/tercera entrega/sass/_servicios.scss */
+.contenido-textos h3 span {
+  background: #4d0686;
+  color: #fff;
+  border-radius: 60%;
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  padding: 2px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin-right: 5px;
+}
+
+/* line 43, ../../../OneDrive/Escritorio/tercera entrega/sass/_servicios.scss */
+.contenido-textos p {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+/*galeria*/
+/* line 4, ../../../OneDrive/Escritorio/tercera entrega/sass/_galeria.scss */
+.portafolio {
+  background: #f2f2f2;
+}
+
+/* line 8, ../../../OneDrive/Escritorio/tercera entrega/sass/_galeria.scss */
+.galeria-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* line 14, ../../../OneDrive/Escritorio/tercera entrega/sass/_galeria.scss */
+.imagen-port {
+  width: 24%;
+  margin-bottom: 10px;
+  gap: 5px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* line 26, ../../../OneDrive/Escritorio/tercera entrega/sass/_galeria.scss */
+.imagen-port img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter .2s;
+}
+
+/* line 35, ../../../OneDrive/Escritorio/tercera entrega/sass/_galeria.scss */
+.imagen-port:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+/*.galeria-port:hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}*/
+/*nosotros*/
+/* line 3, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+/* line 10, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.cards .card {
+  background: #d764409a;
+  display: flex;
+  width: 46%;
+  height: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+/* line 21, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.cards .card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
+}
+
+/* line 31, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.cards .card .contenido-texto-card {
+  width: 60%;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 37, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.cards .card .contenido-texto-card p {
+  font-weight: 300;
+  padding-top: 5px;
+  text-align: center;
+}
+
+/* our team*/
+/* line 45, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.about-servicios {
+  background: #f2f2f2;
+  padding-bottom: 30px;
+}
+
+/* line 50, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.servicio-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 57, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.servicio-ind {
+  width: 28%;
+  text-align: center;
+}
+
+/* line 62, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.servicio-ind img {
+  width: 90%;
+}
+
+/* line 67, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.servicio-ind h3 {
+  margin: 10px 0;
+}
+
+/* line 71, ../../../OneDrive/Escritorio/tercera entrega/sass/_nosotros.scss */
+.servicio-ind p {
+  font-weight: 300;
+  text-align: center;
+}
+
+/*CONTACTO*/
+/* line 5, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.form {
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px black;
+  text-align: center;
+}
+
+/* line 16, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.form__title {
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+/* line 22, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.form__container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+
+/* line 28, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.form__group {
+  position: relative;
+  --color: #5757577e;
+}
+
+/* line 33, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.form__input {
+  width: 100%;
+  background-color: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 46, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #acadb1;
+}
+
+/* line 54, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.form__label {
+  color: var(--color);
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s, color .3s;
+}
+
+/* line 64, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.form__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #3d2ec08b;
+}
+
+/* line 73, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.form-control {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 78, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.btn {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #615c5c;
+}
+
+/* line 88, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+.btn:focus {
+  outline: 0;
+}
+
+/* line 91, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+button {
+  border-color: #5f5f62;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* line 96, ../../../OneDrive/Escritorio/tercera entrega/sass/_contacto.scss */
+button:hover {
+  box-shadow: 0 0 40px #8383b7 inset;
+}
+
+/*footer*/
+/* line 4, ../../../OneDrive/Escritorio/tercera entrega/sass/_footer.scss */
+footer {
+  background: #414141;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* line 11, ../../../OneDrive/Escritorio/tercera entrega/sass/_footer.scss */
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 20, ../../../OneDrive/Escritorio/tercera entrega/sass/_footer.scss */
+.content-foo {
+  text-align: center;
+}
+
+/* line 25, ../../../OneDrive/Escritorio/tercera entrega/sass/_footer.scss */
+.content-foo h4 {
+  color: #fff;
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 32, ../../../OneDrive/Escritorio/tercera entrega/sass/_footer.scss */
+.content-foo p {
+  color: #ccc;
+}
+
+/* line 37, ../../../OneDrive/Escritorio/tercera entrega/sass/_footer.scss */
+.content-foo a {
+  color: #fff;
+  border-radius: 60%;
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  padding: 2px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin-right: 5px;
+  text-decoration-line: none;
+}
+
+@media screen and (max-width: 900px) {
+  /*header responsivo*/
+  /* line 6, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  header {
+    background-position: center;
+  }
+  /* line 10, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 16, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .sobre-nosotros .contenido-textos {
+    width: 90%;
+  }
+  /* line 21, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .iamgen-about-us {
+    width: 90%;
+  }
+  /*galeria responsive*/
+  /* line 26, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .imagen-port {
+    width: 44%;
+  }
+  /* clientes responsive*/
+  /* line 32, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 38, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .cards .card {
+    width: 90%;
+  }
+  /* servicios responsive*/
+  /* line 44, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .servicio-cont {
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* line 49, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .servicio-ind {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* line 55, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .servicio-ind img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* line 63, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  nav {
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+  /* line 68, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  nav > a {
+    margin-right: 5px;
+  }
+  /* line 73, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .texto-header h1 {
+    font-size: 35px;
+  }
+  /* line 77, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .texto-header h2 {
+    font-size: 20px;
+  }
+  /*about us responsive*/
+  /* line 83, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .iamgen-about-us {
+    margin-bottom: 60px;
+    width: 99%;
+  }
+  /* line 89, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .sobre-nosotros .contenido-textos {
+    width: 95%;
+  }
+  /*galeria responsive*/
+  /* line 95, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .imagen-port {
+    width: 95%;
+  }
+  /*clientes responsive*/
+  /* line 102, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .cards .card {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 111, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .cards .card img {
+    width: 90px;
+    height: 90px;
+  }
+  /*footer responsive*/
+  /* line 118, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .contenedor-footer {
+    flex-direction: column;
+    border: none;
+  }
+  /* line 123, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .content-foo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* line 128, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .content-foo h4 {
+    border: none;
+  }
+  /* line 132, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .content-foo p {
+    color: #ccc;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* line 141, ../../../OneDrive/Escritorio/tercera entrega/sass/_responsive.scss */
+  .form__title {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
